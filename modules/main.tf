@@ -9,17 +9,12 @@ module vpc {
 
 module classic_instance {
   source = "./classic"
-
   for_each       = var.environment
   datacenter     = each.value.datacenter
   name           = each.value.name
   instance_count = each.value.instance_count
   instance_type  = each.value.instance_type
 }
-
-
-
-
 
 module object_storage {
   source        = "./object-storage"

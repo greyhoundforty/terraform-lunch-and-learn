@@ -37,7 +37,7 @@ variable image_id {
 variable instance_count {
   description = "Number of compute instances to deploy."
   type        = string
-  default     = "1"
+  default     = "2"
 }
 
 variable tags {

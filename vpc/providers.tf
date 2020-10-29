@@ -3,9 +3,3 @@ provider "ibm" {
   generation       = 2
   ibmcloud_timeout = var.ibmcloud_timeout
 }
-
-
-
-
-
-
